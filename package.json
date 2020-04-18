@@ -1,0 +1,23 @@
+{
+  "name": "persian-words-game-solver",
+  "version": "1.0.0",
+  "description": "## Word Databases - https://raw.githubusercontent.com/reza1615/Persian-Spell-checker/master/Word_collection_1 - https://bigdata-ir.com/%D9%81%D8%A7%DB%8C%D9%84-%D8%AF%DB%8C%DA%A9%D8%B4%D9%86%D8%B1%DB%8C-%D8%A8%D8%A7-%D9%81%D8%B1%D9%85%D8%AA-csv/",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardalann/persian-words-game-solver.git"
+  },
+  "author": "Ardalan Naghshineh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ardalann/persian-words-game-solver/issues"
+  },
+  "homepage": "https://github.com/ardalann/persian-words-game-solver#readme",
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
+}
