@@ -6,6 +6,8 @@ input.addEventListener("keyup", (e) => {
 });
 
 const solve = async (letters, minLength = 3, maxLength = letters.length) => {
+  resultDiv.innerHTML = "";
+
   let words = [...(await wordsPromise)];
 
   words = words.filter((word) => {
@@ -25,11 +27,12 @@ const solve = async (letters, minLength = 3, maxLength = letters.length) => {
   );
 
   console.log("print...");
+
   let resultHTML = "";
   words.forEach((word) => {
     resultHTML += `<li>${word}</li>`;
   });
-  resultDiv.innerHTML += "<ul>" + resultHTML + "</ul>";
+  resultDiv.innerHTML += '<ol dir="rtl">' + resultHTML + "</ol>";
 };
 
 const wordsPromise = new Promise((resolve) => {
