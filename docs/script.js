@@ -2,7 +2,7 @@ const input = document.getElementById("letters");
 const resultDiv = document.getElementById("result");
 
 input.addEventListener("keyup", (e) => {
-  solve(e.target.value.split(""));
+  solve(e.target.value.replace(/ /g, "").split(""));
 });
 
 const solve = async (letters, minLength = 3, maxLength = letters.length) => {
